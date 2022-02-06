@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/m1.png" type="image/icon type">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main Heading -->
+    <div class="tscls-FullContainer">
+        <header class="tsclsHeader">
+            <img src="images/icon.png" id="tsidLogo">
+            <h2 id="tsid-Heading">Single Page Chat Application</h2>
+        </header>
+    </div>
+
+    <!-- This is the Container or we can say the body  -->
+    <div class="tscls-FullContainer">
+
+        <!-- This is the left Div that conatins three Div's -->
+         <div class="tscls-Div">
+
+            <!-- this div contain the heading or name os the user -->
+            <div class="tscls-LeftDiv1">
+                <h2 class="tscls-User1">User1</h2>
+                <button  class="tscls-ClearChat"  id="tsid-ClearChatBtn" onclick="clearAllListItems('tsidClearL')" >Clear Chat</button>
+            </div>
+
+            <!-- This div contains the main part that it store the messages -->
+            <div class="tscls-LeftDiv2" id="tsidClearL">
+                <ul id="tsid-LeftUl"> </ul>
+            </div>
+
+            <!-- This div conatins the input area and the send button -->
+            <div class="tscls-LeftDiv3">
+                <input id="tsid-LeftTextBox" type="text" placeholder="Enter Message" required autofocus>
+                <button id="tsid-LeftBtn">Send</button>
+            </div>
+    
+        </div> 
+
+
+        <!-- This is the Right Div that conatins three Div's -->
+        <div class="tscls-Div">
+
+            <!-- this div contain the heading or name os the user -->
+            <div class="tscls-RightDiv1">
+                <h2 class="tscls-User2">User2</h2>
+                <button  class="tscls-ClearChat"  id="tsid-ClearChatBtnR"  onclick="clearAllListItems('tsidClearR')">Clear Chat</button>
+            </div>
+
+            <!-- This div contains the main part that it store the messages -->
+            <div class="tscls-RightDiv2" id="tsidClearR">
+                <ul id="tsid-RightUl"></ul>
+            </div>
+
+            <!-- This div conatins the input area and the send button -->
+            <div class="tscls-RightDiv3">
+                <input id="tsid-RightTextBox" type="text" placeholder="Enter Message">
+                <button id="tsid-RightBtn">Send</button>
+            </div>
+    
+        </div> 
+        
+        <!-- Footer of the Application -->
+        <footer>
+            <p>&copy; Copyright 2022. All Rights Reserved</p>
+            <p>Made With &hearts; By Manish Yadav</p>
+        </footer>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
